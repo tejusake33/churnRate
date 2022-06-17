@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+     <div class="container">
+        <div class="card">
+            <form action="">
+                <div class="block">
+                    <p>customers at start of a period</p>
+                    <input id="start" type="text" autofocus oninput="calc();"/>
+                </div>
+                <div class="block">
+                    <p>customers lost during period</p>
+                    <input id="lost" type="text" oninput="calc();"/>
+                </div>
+                <div class="block">
+                    <p>Churn rate</p>
+                    <input type="number" id="churnRate">
+                    <span>%</span>
+                </div>
+                 <div class="block">
+                    <p>customer lifetime</p>
+                    <input type="number" id="lifetime">
+                    <span>periods</span>
+                </div> 
+            </form>
+        </div>
+        <div class="card2"></div>
+    </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>
