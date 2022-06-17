@@ -61,5 +61,32 @@ span{
     border-bottom-right-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline; 
+    text-decoration-color: #ffcd27;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    height: 150px;
+    background-color: #f8f8f8;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    position: absolute;
+    left: 20px;
+    top: -170px;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
  
