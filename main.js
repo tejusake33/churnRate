@@ -1,5 +1,5 @@
 function calc() {
-    var customersAtStart = document.getElementById("start").value;
+    var customersAtStart = document.getElementById("start").value; 
     var customersAtStart = parseInt(customersAtStart,10);
     var customersLost = document.getElementById("lost").value;
     var customersLost = parseInt(customersLost,10);
